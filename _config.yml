@@ -1,0 +1,47 @@
+
+title: valenrc's blog #Your awesome title
+email: valenrc@uba.ar
+description: > # this means to ignore newlines until "baseurl"
+  valenrc, Computer Science at UBA.
+
+baseurl: # the subpath of the site
+url: http://valenrc.github.io # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone:
+
+favicon: /assets/img/favicon.ico
+
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
+
+user:
+  name: valenrc
+  pic: /assets/img/reimu.png
+  picAlt: "pfp"
+  job: CS at UBA
+  aboutme: true # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
