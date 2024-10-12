@@ -1,6 +1,48 @@
 ---
 layout: page
 ---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Personal</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <style>
+    /* Asegurarse de que el texto sea legible en modo nocturno */
+    a {
+      color: #52bc29;
+    }
+    body {
+      color: #333; /* Modo claro */
+    }
 
-{% include archive.html %}
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #CACCCE; /* Color del texto en modo nocturno */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <p>This is my personal blog, I will upload termux-related stuff (personalization and other tweaks) and useful college notes. All the content in this blog will be in spanish.</p>
+    <p><a href="{{ '/aboutme' | relative_url }}">contact me</a> </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="{{ '/categories/termux/' | relative_url }}">Termux</a></li>
+        <li><a href="{{ '/categories/facultad/' | relative_url }}">Facultad</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
 
