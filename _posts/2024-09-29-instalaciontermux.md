@@ -44,7 +44,7 @@ Una [terminal](https://es.wikipedia.org/wiki/Terminal_(inform%C3%A1tica)) solía
 ![terminal en fallout 4](/assets/img/posts/terminal.webp) ~*Una terminal en fallout 4*
 
 Ahora las terminales son software, conocidas como emuladores de terminal. Imitan la misma funcionalidad pero sin necesitar hardware especializado.
-Termux emula una terminal en Android aprovechando el kernel de linux y completandola con un entorno que contiene el software básico y los comandoss que vienen con todas las distribuciones modernas de linux. 
+Termux emula una terminal en Android aprovechando el kernel de linux y completandola con un entorno que contiene el software básico y los comandos que vienen con todas las distribuciones modernas de linux. 
 
 ### Termux es linux?
 >The environment setup in Termux is similar to that of a modern Linux distribution. However, running on Android implies several important differences.
