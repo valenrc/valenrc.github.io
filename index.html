@@ -10,16 +10,16 @@ layout: page
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <style>
     /* Asegurarse de que el texto sea legible en modo nocturno */
-    a {
-      color: #52bc29;
+    /* Estilos para los enlaces solo en esta página */
+    body{
+        color: #333
     }
-    body {
-      color: #333; /* Modo claro */
-    }
-
     @media (prefers-color-scheme: dark) {
-      body {
-        color: #CACCCE; /* Color del texto en modo nocturno */
+      a {
+        color: #52bc29; /* Azul claro para modo oscuro */
+      }
+      body{
+        color: #CACCCE
       }
     }
   </style>
@@ -27,22 +27,21 @@ layout: page
 <body>
   <header>
     <h1>Welcome!</h1>
-    <p>This is my personal blog, I will upload termux-related stuff (personalization and other tweaks) and useful college notes. All the content in this blog will be in spanish.</p>
-    <p><a href="{{ '/aboutme' | relative_url }}">contact me</a> </p>
+    <p>This is my personal blog, I will upload termux-related stuff (personalization and other tweaks) and college notes.</p>
+    <p>All the content in this blog will be written in spanish</p>
+    <p><a href="{{ '/aboutme' | relative_url }}">Contact me</a> </p>
   </header>
-
   <main>
     <section>
-      <h2>Categories</h2>
+      <h3>Categories</h3>
       <ul>
         <li><a href="{{ '/categories/termux' | relative_url }}">Termux</a></li>
         <li><a href="{{ '/categories/facultad' | relative_url }}">Facultad</a></li>
       </ul>
     </section>
   </main>
+  <h3>Recent posts</h3>
+  {% include archive.html %}
 </body>
 </html>
-
-
-
 

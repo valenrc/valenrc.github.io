@@ -213,6 +213,27 @@ img {
     margin-top: 7rem;
 }
 
+// Estilo para el botón de scroll-top
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #52bc29; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #45a018; /* Color al pasar el ratón por encima */
+  }
+
 
 /* 2. Archive
    ========================================================================== */
@@ -242,7 +263,7 @@ img {
 
     @include breakpoint(medium) {
         max-width: 30rem;
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 
     @include mobile-only {
@@ -600,14 +621,13 @@ img {
         display: block;
         padding: 1rem;
         overflow-x: scroll;
-        border-radius: 10px;
         white-space: pre;
     }
 
     code {
         color: var(--inlinecode_text);
         padding: .1em .4em;
-        border-radius: 5px;
+        border-radius: 1px;
         font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
         font-size: .85rem;
     }
@@ -692,40 +712,6 @@ img {
 .post_comment {
     margin-top: 8rem;
     padding: 10px;
-}
-
-.copy-button {
-    background-color: #5f676d;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 11px;
-    margin-bottom: 5px;
-}
-
-.copy-button:hover {
-    background-color: #4b8236;
-}
-
-.copy-button:active {
-    background-color: #004f80;
-}
-
-pre {
-    position: relative;
-}
-
-pre code {
-    display: block;
-    padding: 15px;
-}
-
-pre .copy-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
 
 
