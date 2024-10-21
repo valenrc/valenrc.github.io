@@ -1,4 +1,58 @@
-.highlight pre { background-color: #404040 }
+/* Añade esto a tu archivo _sass/_code_style.scss o crea uno nuevo si no existe */
+
+/* Actualiza esto en tu archivo _sass/_code_style.scss */
+
+/* Actualiza esto en tu archivo _sass/_code_style.scss */
+
+.highlight-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  margin-bottom: 0;
+}
+
+.highlight pre {
+  background-color: #000000;
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.highlight code {
+  display: block;
+  padding: 0;
+  overflow-x: visible;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.code-language {
+  font-weight: bold;
+}
+
+.copy-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;   
+}
+
+.copy-button:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
 .highlight .hll { background-color: #404040 }
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

@@ -24,38 +24,33 @@ layout: page
     {{ content }}
   </div>
 
-
   {% if page.comment %}
   <div class="post_comment">
-
     {% include disqus.html username = site.disqus.shortname %}
     {% include cusdis.html %}
-
   </div>
   {% endif %}
 
+  <!-- Botón de "Volver arriba" -->
+  <a href="#" id="scrollTopBtn" title="Volver Arriba">⬆</a>
+
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const codeBlocks = document.querySelectorAll('pre code');
+    // Mostrar el botón "Volver arriba" cuando el usuario hace scroll
+    window.onscroll = function() {scrollFunction()};
 
-        codeBlocks.forEach(function(block) {
-            const button = document.createElement('button');
-            button.innerText = 'Copiar';
-            button.className = 'copy-button';
+    function scrollFunction() {
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block"; // Mostrar el botón
+      } else {
+        scrollTopBtn.style.display = "none"; // Ocultar el botón
+      }
+    }
 
-            block.parentNode.insertBefore(button, block);
-
-            button.addEventListener('click', function() {
-                const code = block.innerText;
-                navigator.clipboard.writeText(code).then(function() {
-                    button.innerText = 'Copiado!';
-                    setTimeout(function() {
-                        button.innerText = 'Copiar';
-                    }, 2000);
-                });
-            });
-        });
+    // Al hacer clic, volver al principio de la página
+    document.getElementById("scrollTopBtn").addEventListener("click", function(e) {
+      e.preventDefault();
+      window.scrollTo({top: 0, behavior: 'smooth'});
     });
-</script>
-
+  </script>
 </div>

@@ -40,6 +40,9 @@ defaults:
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown 
 
+kramdown:
+  syntax_highlighter: rouge
+
 # Filtering Content
 show_drafts: null
 limit_posts: 0
