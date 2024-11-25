@@ -28,7 +28,7 @@
     --post_h3: #4c4c4c;
     --post_link: #46a891;
     --post_link_hover: #87CDBD;
-    --inlinecode_text: #FFAA00;
+    --inlinecode_text: #1a4a2f;
     --blockquote: #333;
     --footer_font: #858585;
     --footer_font_a: #000;
@@ -234,6 +234,30 @@ img {
     background-color: #45a018; /* Color al pasar el ratón por encima */
   }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1rem 0;
+}
+
+th, td {
+	padding: 0.5rem;
+	text-align: left;
+	border: 1px solid var(--post_text);
+}
+
+th {
+	background-color: var(--header_bg);
+	font-weight: bold;
+}
+
+tr:nth-child(even) {
+	background-color: var(--content_bg);
+}
+
+tr:hover {
+	background-color: var(--shadow_color);
+}
 
 /* 2. Archive
    ========================================================================== */
