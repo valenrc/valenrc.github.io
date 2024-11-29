@@ -1,10 +1,10 @@
 ---
-title: Resumen de x86_64 para el primer parcial
+title: Resumen de x86_64 - System V ABI
 categories: [facultad]
 comments: false
 ---
 
-# Resumen de x86_64 para el primer parcial
+## Resumen de x86_64 y System V ABI para el primer parcial de Arquitectura y Organización de Computadoras
 
 <!-- Index -->
 - [Registros](#registros)
